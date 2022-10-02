@@ -1,5 +1,10 @@
 export const theme = {
-  borders: [0, '2px solid', '4px solid', '8px solid'],
+  borders: {
+    none: 'none',
+    small: '2px solid',
+    medium: '4px solid',
+    large: '8px solid',
+  },
   radii: {
     none: '0',
     normal: '0.25rem',
@@ -9,7 +14,7 @@ export const theme = {
     black: '#000',
     white: '#fff',
     text: '#2a2a2a',
-    background: '#fff',
+    background: '#f5f0f0',
     primary: '#07c',
     secondary: '#05a',
     accent: '#fda031',
@@ -22,7 +27,7 @@ export const theme = {
     l: '32px',
     xl: '64px',
   },
-  fontWeights: [400, 500, 700, 900],
+  fontWeights: { regular: 400, medium: 500, bold: 700, black: 900 },
   lineHeights: {
     solid: 1,
     title: 1.25,

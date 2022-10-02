@@ -1,12 +1,14 @@
 import { Box } from 'components/Box';
 import { GlobalStyle } from './GlobalStyle';
+import Reviews from './components/Reviews/Reviews';
+import reviews from './data';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Box as="main" bg="white">
-        template's working
+      <Box as='main'>
+        <Reviews reviews={reviews} />
       </Box>
     </>
   );

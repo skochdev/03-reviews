@@ -12,20 +12,30 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e8ecea;
   }
 
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
   }
-  
+
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
-  h1,h2,h3,h4,h5,h6,p {
+
+  h1, h2, h3, h4, h5, h6, p {
     margin: 0;
   }
 
