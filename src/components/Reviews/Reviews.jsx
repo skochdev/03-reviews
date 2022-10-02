@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from 'react-icons/bs';
 import * as S from './Reviews.styled';
 import { Box } from '../Box';
@@ -6,7 +6,7 @@ import { Box } from '../Box';
 const Reviews = ({ reviews }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalReviews = reviews.length;
-  const { id, name, job, text, image } = reviews[currentIndex];
+  const { name, job, text, image } = reviews[currentIndex];
   console.log(reviews[currentIndex]);
 
   const nextReview = () => {
