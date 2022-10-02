@@ -7,7 +7,6 @@ const Reviews = ({ reviews }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalReviews = reviews.length;
   const { name, job, text, image } = reviews[currentIndex];
-  console.log(reviews[currentIndex]);
 
   const nextReview = () => {
     if (currentIndex === totalReviews - 1) {
